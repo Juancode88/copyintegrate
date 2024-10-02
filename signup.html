@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="/css/csslogin/loginstyle.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Crear cuenta</h1>
+    <h2>Crea una cuenta colega <br>
+    <span>parillero.</span></h2>
+    <p id="error-message"></p>
+    <form id="form">
+      <div>
+        <label for="firstname">
+          <i class='bx bxs-user'></i>
+        </label>
+        <input type="text" name="firstname" id="firstname" placeholder="Nombre de usuario">
+      </div>
+      <div>
+        <label for="email">
+          <i class='bx bx-envelope'></i>
+        </label>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+      <div>
+        <label for="password">
+          <i class='bx bx-key' ></i>
+        </label>
+        <input type="password" name="password" id="password" placeholder="Clave">
+      </div>
+      <div>
+        <label for="repeat-password">
+          <i class='bx bxs-badge-check' ></i>
+        </label>
+        <input type="password" name="repeat-password" id="repeat-password" placeholder="Confirmar clave">
+      </div>
+      <button type="submit">Crea mi cuenta</button>
+    </form>
+    <p>¿Ya tienes una cuenta? <a href="login.html">Registro</a></p>
+  </div>
+  <script type="text/javascript" src="/js/loginvalidation.js"></script>
+</body>
+</html>
