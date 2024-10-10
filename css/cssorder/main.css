@@ -31,7 +31,11 @@ h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
 
 h1, h2, h3, h4, h5, h6,a,ul{
     font-family: var(--secondary-font);
-    font-weight: 700;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.2rem;
 }
 
 ul {
@@ -60,9 +64,15 @@ aside {
     justify-content: space-between;
 }
 
+header{
+    margin-left: 0;
+}
+
 .logo {
-    font-weight: 400;
-    font-size: 1.3rem;
+    display: flex;
+    font-weight: 300;
+    font-size: 0.9rem;
+    left: 0;
 }
 
 .menu {

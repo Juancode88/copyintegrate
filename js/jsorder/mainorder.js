@@ -1,6 +1,6 @@
 let productos = [];
 
-fetch("./js/productos.json")
+fetch("./js/jsorder/productos.json")
     .then(response => response.json())
     .then(data => {
         productos = data;
@@ -29,7 +29,7 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}" height="${producto.height}">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
@@ -63,14 +63,6 @@ botonesCategorias.forEach(boton => {
     })
 });
 
-//pass to eccomerce platform
-const returnHome = document.getElementById('home-return-btn');
-
-retuntHome.addEventListener('click', function() {
-    console.log("Home return button clicked");
-    window.location.href = 'index.html'; 
-});
-
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
 
@@ -83,7 +75,7 @@ let productosEnCarrito;
 
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
 
-if (productosEnCarritoLS) { 
+if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
     actualizarNumerito();
 } else {
@@ -106,8 +98,8 @@ function agregarAlCarrito(e) {
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '1.5rem' 
           },
         onClick: function(){} // Callback after click
       }).showToast();

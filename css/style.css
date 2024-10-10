@@ -269,21 +269,6 @@ p {
     color: #878383;
 }
    
-/* Counter Section  */
-
-.counter-section {
-    background-color: var(--primary-color);
-    padding: 2.5rem 0;
-    color: var(--white-color);
-}
-.counter-section span{
-    color: var(--white-color);
-}
-
-.counter-section p {
-    color: var(--white-color);
-    text-transform: uppercase;
-}
 
 /* About Section  */
 
@@ -339,7 +324,7 @@ p {
 .work-section{
     width: 100%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom:0;
     background-color: var(--black-color);
 }
 
@@ -378,7 +363,7 @@ p {
 .story-section {
     width: 100%;
     height: 28.125rem;
-    background-color:#413d3d;
+    background-color:#000;
     background:url('/assets/images/curs.jpg') no-repeat center;
     background-size: cover;
     backdrop-filter: blur(2px);
@@ -394,62 +379,6 @@ p {
     font-size: 1.3rem;
     color: #f9f3f3;
 }
-
-
-/* Explore Food  */
-
-.explore-food{
-    margin: 100px;
-}
-.explore-food h2{
-    margin-bottom: 100px;
-}
-.explore-food .card {
-    border: none;
-    background-color: transparent;
-    border-radius: 0.9375rem;
-}
-
-.explore-food h4{
-    color: #333;
-    font-size: 20px;
-    font-weight: 400;
-}
-.explore-food .card img {
-    border-radius: 0.9375rem;
-    height: 250px;
-    width: 500px;
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.explore-food .card img:hover{
-    transform: scale(0.9);
-    box-shadow: 10px 10px 10px #788acb;
-}
-
-.explore-food .card span {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    padding-bottom: 1rem;
-    border-bottom: 0.0625rem solid #eee;
-}
-
-.explore-food .card span del {
-    color: var(--text-gray);
-    margin-left: 0.5rem;
-}
-
-.explore-food .btn{
-    width: 60px;
-    height: 25px;
-    font-size: 12px;
-    margin-left: 40px;
-    padding: 3px;
-}
-
 /* Testimonial Section  */
 
 .testimonial-section {

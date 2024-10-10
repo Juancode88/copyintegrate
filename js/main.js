@@ -13,15 +13,36 @@ const orderButton = document.getElementById("order-btn");
 
 orderButton.addEventListener("click", () => {
   console.log("Order button clicked");
-  window.location.href = "order.html";
+  window.location.href = "checkout.html";
 });
 
-//pass to newsletter login 
+// pass to admin login 
 const newsletterButton = document.getElementById("newsletter-btn");
 
 newsletterButton.addEventListener("click", () => {
-  console.log("Newsletter button clicked");
-  window.location.href = "login.html";
+    console.log("Newsletter button clicked");
+    window.location.href = "login.html";
+});
+// creation json for username 
+const usernameInput = document.getElementById('username');
+const newsletterBtn = document.getElementById('newsletter-btn');
+newsletterBtn.addEventListener('click', () => {
+  const username = usernameInput.value;
+  const userData = {
+    username: username
+  };
+  const jsonString = JSON.stringify(userData);
+
+  fetch('/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: jsonString
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
 });
 
 // nav hide 
@@ -33,29 +54,4 @@ navbar.forEach(function (a) {
         navcollapse.classList.remove('show');
     })
 })
-
-// counter design 
-
-document.addEventListener("DOMContentLoaded", () => {
-    function counter(id, start, end, duration) {
-        let obj = document.getElementById(id),
-            current = start,
-            range = end - start,
-            increment = end > start ? 1 : -1,
-            step = Math.abs(Math.floor(duration / range)),
-            timer = setInterval(() => {
-                current += increment;
-                obj.textContent = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, step);
-    }
-    counter("count1", 0, 1287, 3000);
-    counter("count2", 100, 5786, 2500);
-    counter("count3", 0, 1440, 3000);
-    counter("count4", 0, 7110, 3000);
-
-});
-
 

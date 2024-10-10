@@ -20,7 +20,7 @@ html{
 body{
   min-height: 100vh;
   background-image: url('/assets/images/cheft.jpg');
-  background-size: 900px;
+  background-size: 1050px;
   background-position: right;
   overflow: hidden;
 }

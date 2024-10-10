@@ -87,3 +87,13 @@ returnHome.addEventListener('click', function(event) {
     console.log("Home return button clicked");
     window.location.href = 'index.html'; 
 });
+
+//pass to dashboard page
+const passBoard = document.getElementById('dashpass');
+
+//pass to return initial page
+returnHome.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log("Home return button clicked");
+    window.location.href = 'dashboard.html'; 
+});
