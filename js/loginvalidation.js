@@ -1,5 +1,5 @@
 const form = document.getElementById('form')
-const firstname_input = document.getElementById('firstname-input')
+const firstname_input = document.getElementById('firstname-input')  // export firstname for other page 
 const email_input = document.getElementById('email-input')
 const password_input = document.getElementById('password-input')
 const repeat_password_input = document.getElementById('repeat-password-input')
@@ -92,7 +92,7 @@ returnHome.addEventListener('click', function(event) {
 const passBoard = document.getElementById('dashpass');
 
 //pass to return initial page
-returnHome.addEventListener('click', function(event) {
+passBoard.addEventListener('click', function(event) {
     event.preventDefault();
     console.log("Home return button clicked");
     window.location.href = 'dashboard.html'; 

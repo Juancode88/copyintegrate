@@ -144,7 +144,7 @@ p {
 
 .logo{
     height: 100px;
-    width: 100%;
+    width: 95%;
 }
 .main-btn:hover {
     background-color:var(--black-color);
