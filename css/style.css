@@ -63,7 +63,7 @@ body {
     font-family: var(--primary-font);
     font-size: 100%;
     font-weight: 400;
-    background-color: #3a3838;
+    background-image: url(/assets/images/background11.jpg);
 }
 
 h1 {
@@ -273,49 +273,66 @@ p {
 /* About Section  */
 
 .about-section {
-    background-color:#3a3838;
+    background-image:url(/assets/images/wall6.jpg);
 }
 
 .about-section .card,
 .about-section .card img {
     border-radius: 0.625rem;
+    box-shadow: 5px 5px 5px #000;
 }
 
 .about-section .text-sec {
     padding-left: 2rem;
+    background-color: transparent;
+}
+
+.about-section .container span{
+    color: #eee30a;
+}
+
+.about-section .container p{
+    font-size: 1.5rem;
 }
 
 /* Food Type  */
 
 .food-type {
     padding-top: 3.25rem;
-    background-color: #4B4B4D;
+    background-image: url(/assets/images/wall3.jpg);
 }
 
 .food-type img{
     border-radius: 0.5rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--third-color);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem #903e07;
 }
-
+.food-type .container span{
+    color: var(--black-color);
+}
 .food-type ul li {
     font-size: 1rem;
     color:#f1dfdf;
     line-height: 32px;
     position: relative;
     margin-left: 30px;
+    font-size: 1.4rem;
 }
 
 .food-type ul li::before {
     position: absolute;
     left: -2.1875rem;
     color: var(--primary-color);
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-family: "Font Awesome 5 Free";
     content: '\f00c';
     display: inline-block;
     padding-right: 3px;
     vertical-align: middle;
     font-weight: 900;
+}
+
+.food-type p{
+    font-size: 1.5rem;
 }
 
 
@@ -325,7 +342,7 @@ p {
     width: 100%;
     margin: auto;
     margin-bottom:0;
-    background-color: var(--black-color);
+    background-image: url(/assets/images/background11.jpg);
 }
 
 .work-section h2 {
@@ -388,7 +405,7 @@ p {
 .testimonial-section .carousel-item {
     margin-top: 3rem;
     padding: 10rem 3.125rem;
-    background-color: #413d3d;
+    background-image: url(/assets/images/wall8.jpg);
     border-radius: 0.9375rem;
     text-align: center;
 }
@@ -432,7 +449,11 @@ p {
 
 /* FAQ Section  */
 .faq{
- background-color: #3a3838;
+    background-image: url(/assets/images/wall9.jpg);
+}
+.faq .container{
+   /* background-image: url(/assets/images/wall8.jpg);*/
+    border-radius: 2rem;
 }
 .faq h4 span {
     font-size: 2.1rem;
@@ -440,10 +461,14 @@ p {
 }
 
 .faq h4 {
-    font-weight: 600;
     color: var(--primary-color);
+    font-size: 2.1rem;
+    font-weight: 600;
 }
 
+.faq p{
+    font-size: 1.5rem;
+}
 
 .book-food {
     width: 100%;
@@ -459,7 +484,7 @@ p {
 .newsletter {
     width: 60%;
     margin: 0 auto;
-    background-color: #3a3838;
+    background-image: url(/assets/images/background11.jpg);
 }
 
 .newsletter .form-control {
@@ -487,7 +512,7 @@ p {
 
 .contact-section{
     margin-bottom: 100px;
-    background-color: #3a3838;
+    background-image: url(/assets/images/wall10.jpg);
 }
 .contact-section img{
     border-radius: 20px;

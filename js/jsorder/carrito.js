@@ -140,3 +140,21 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove("disabled");
 
 }
+
+const passCar = document.getElementById('carrito-acciones-comprar');
+
+//pass to return initial page
+passCar.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log("Home return button clicked");
+    window.location.href = 'paymentget.html'; 
+});
+
+const payer = [totalCalculado];
+payer.forEach(pay=> {
+    console.log(pay);
+    // Save each message to localStorage
+    savePayToStorage(pay);
+});
+
+export {payer}

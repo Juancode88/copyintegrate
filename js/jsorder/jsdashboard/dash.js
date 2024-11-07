@@ -146,7 +146,6 @@ window.addEventListener('click', function (e) {
 	})
 })
 
-//Generation username personalization
 
 // PROGRESSBAR
 const allProgress = document.querySelectorAll('main .card .progress');
@@ -256,3 +255,4 @@ var options = {
   
   var chart = new ApexCharts(document.querySelector("#chart2"), options);
   chart.render();
+  
