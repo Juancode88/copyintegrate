@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+  }
+  :root {
+    --primary-color: #e04946;
+    --secondary-color: #e87a30f3;
+    --third-color: #f98169;
+    --white-color: #f8f4f4; 
+    --text-color: #555;
+    --text-gray: #999;
+    --black-color: #000;
+    --primary-font: "Ubuntu", sans-serif;
+    --secondary-font: "Mynerve", cursive;
+}
+  body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #24272a;
+    width: 500px;
+    padding: 3em;
+    border-radius: 1em;
+    perspective: 800px;
+    box-shadow: 2px 2px 2px #e3d9d9;
+  }
+  .credit-card {
+    position: relative;
+    width: 350px;
+    height: 220px;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px  var(--white-color); 
+    border-radius:1em ;
+  }
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-image: url(/assets/images/smoke3.png);
+    border-radius: 1em;
+    backface-visibility: hidden;
+  }
+  .card-front {
+    padding: 2em 1em;
+  }
+  .branding {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .branding img {
+    width: 55px;
+    height: auto;
+  }
+  .card-back {
+    position: absolute;
+    transform: rotateY(180deg);
+  }
+  .card-number {
+    color: var(--white-color);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    margin-top: 3em;
+  }
+  .details {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    font-size: 0.8em;
+  }
+  .details span {
+    display: block;
+  }
+  .details #card-holder-name {
+    text-transform: uppercase;
+  }
+  .card-back{
+    color: var(--black-color);
+  }
+  .card-back .black-strip {
+    position: relative;
+    background-color: var(--black-color);
+    height: 50px;
+    top: 2em;
+  }
+  .card-back .white-strip {
+    top: 3em;
+    position: relative;
+    text-align: right;
+  }
+  .card-back .white-strip span {
+    margin-right: 1em;
+    color: var(--white-color);
+  }
+  .card-back .white-strip div {
+    height: 30px;
+    background-color: var(--white-color);
+    margin-top: 0.5em;
+  }
+  .card-back .visa-logo {
+    position: absolute;
+    width: 50px;
+    margin-top: 4em;
+    right: 1em;
+  }
+  form {
+    margin-top: 2em;
+  }
+  label,
+  input {
+    display: block;
+  }
+  label {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  label {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    border: 1px solid var(--white-color);
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+  }
+  input:not(:last-child) {
+    margin-bottom: 1em;
+  }
+  form .date-cvv {
+    display: flex;
+    justify-content: space-between;
+  }
